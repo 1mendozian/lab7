@@ -1,0 +1,15 @@
+#include <iostream>
+using namespace std;
+
+int main (int argc, char** argv)
+{
+  string str;
+  int a, b, max;
+  cout <<"\n" << str <<"Input A, B : " <<endl;
+  cin >> a >> b;
+  max=a;
+  if (b>max) max = b;
+  cout << str << "max = " << max <<endl;
+
+  return 0;
+}

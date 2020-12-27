@@ -1,0 +1,16 @@
+#include <iostream>
+using namespace std;
+ 
+int main() 
+{
+  string a, b, max, str;
+  a = "Hello world";
+  b = "Привіт всім!";
+  cout << a << " " << a.length() << endl;
+  cout << b << " " << b.length() << endl;
+  max=a;
+  if (b>max) max = b;
+  cout <<str <<"max = " <<max <<endl;
+
+    return 0;
+}

@@ -1,0 +1,39 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+
+int exp, sal, bonus, total;
+
+cout<<"Enter your work experience (years): "<<endl;
+cin>>exp;
+cout<<"Enter your salary: "<<endl;
+cin>>sal;
+
+if (exp>=5 && exp<10)
+{
+bonus=0.05*sal;
+cout<<"Your bonus: "<<bonus<<endl;
+total=sal+bonus;
+cout<<"Total: "<<total<<endl;
+}
+
+if (exp>=10)
+{
+bonus=0.1*sal;
+cout<<"Your bonus: "<<bonus<<endl;
+total=sal+bonus;
+cout<<"Total:"<<total<<endl;
+}
+
+else
+{
+bonus=0*sal;
+cout<<"Your bonus: "<<bonus<<endl;
+total=sal+bonus;
+cout<<"Total:"<<total<<endl;
+}
+
+return 0;
+}

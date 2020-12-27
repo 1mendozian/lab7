@@ -1,0 +1,39 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+int a, b, c, aa, ba, ca;
+
+cout<<"Enter length of side a"<<endl;
+cin>>a;
+cout<<"Enter length of side b"<<endl;
+cin>>b;
+cout<<"Enter length of side c"<<endl;
+cin>>c;
+
+cout<<"Enter angle a"<<endl;
+cin>>aa;
+cout<<"Enter angle b"<<endl;
+cin>>ba;
+cout<<"Enter angle c"<<endl;
+cin>>ca;
+
+if (a==b==c && aa==ba==ca)
+{
+cout<<"Triangle is equilateral"<<endl;
+}
+if ( a==b && aa==ba || b==c && ba==ca || c==a && ca=aa )
+{
+cout<<"Triangle is isosceles"<<endl;
+}
+if (a!=b!=c && aa!=ba!=ca)
+{
+cout<<"Triangle is scalene"<<endl;
+}
+else 
+{
+  cout << "It is not a triangle " <<endl;
+}
+return 0;
+}

@@ -1,0 +1,21 @@
+#include <iostream>
+using namespace std;
+ 
+int main(int argc, char** argv) 
+{
+  string str;
+  int d, m, Y, c, day;
+
+  cout << "Day: " <<endl;
+  cin >> d;
+  cout << "Month" <<endl;
+  cin >> m;
+  cout << "Year" <<endl;
+  cin >> Y;
+  cout << "Century" <<endl;
+  cin >> c;
+  day=(d+(13*m-1)/5+Y+Y/4+c/4-2*c+777) % 7;
+  cout << "What day of the week:" << day <<endl;
+
+    return 0;
+}
